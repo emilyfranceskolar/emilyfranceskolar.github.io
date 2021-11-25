@@ -1,0 +1,216 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+header { 
+    background-color: #fff;
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+}
+
+a{
+    text-decoration: none;
+})
+.logo {
+    cursor: pointer;
+} 
+
+
+#navbar li:first-child {
+    color: #2e8692;
+}
+
+#navbar li, a{
+    list-style: none;
+    color:darkgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#navbar a{
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: #2e8692;
+}
+
+.pic1, .pic2, .pic3, .pic4, .pic5, .pic6 {
+    position:relative;
+    opacity:0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pic1{
+    background-image: url('../img/pic1.jpg');
+    min-height:70%;
+
+}
+
+.pic2{
+    background-image: url('../img/pic2.jpg');
+    min-height:400px;
+}
+
+.pic3{
+    background-image: url('../img/pic3.jpg');
+    min-height:400px;
+}
+
+.pic4{
+    background-image: url('../img/pic4.jpg');
+    min-height:400px;
+}
+
+.pic5{
+    background-image: url('../img/pic5.jpeg');
+    min-height:400px;
+}
+
+.pic6{
+    background-image: url('../img/pic6.jpeg');
+    min-height:400px;
+}
+
+.section{
+    text-align: center;
+    padding: 30px 80px;
+}
+
+.sectionLigt{
+    padding: 30px 70px;
+    background-color:#fff;
+    color:#2e8692;
+
+}
+
+.sectionLigt h1{
+    color:#333;
+}
+
+.menu {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.menu-group-heading {
+    margin:1.5em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+}
+
+.menu-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+.menu-item {
+    display: flex;
+}
+
+.menu-item-text {
+    flex-grow: 1;
+}
+
+.menu-item-heading{ 
+    margin: 0;
+    display: flex;
+    justify-content: space-between ;
+
+}
+
+.menu-item-name{
+    text-align: left;
+}
+ 
+.menu-item-descrip {
+    text-align: left;
+    line-height: 1.5em;
+    margin:0;
+    display: flex;
+}
+.sectionDark{
+    text-align: center;
+    padding: 30px 70px;
+    background-color:#333;
+    color:#fff;
+}
+
+.sectionDark h2, ul{
+    text-align:center;
+    list-style: none;
+}
+
+
+.sectionDark .button1{
+    position:relative;
+    border-radius: 20px;
+    background-color: silver;
+    text-transform: lovercase;
+    padding:10px;
+    transition: all 0.3s ease 0s;
+}
+
+.sectionDark .button1:hover{
+    background-color: #2e8692
+}
+
+.picText{
+    position:absolute;
+    top:50%;
+    width:100%;
+    font-size:30px;
+    letter-spacing:12px;
+    text-align:center;
+    text-transform: lowercase;
+    color: #fff;
+} 
+.adress{
+    text-transform: lowercase;
+    text-align: center;
+    
+}
+
+#footer{
+    background-color:#fff;
+    color:#2e8692;
+    padding:30px;
+}
+#footer ul{
+    list-style: none; 
+    padding:0;
+    margin:0;
+}
+
+#footer li{
+    display:inline-flexbox;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animate__animated {
+      animation:ease-in-out 0.5s;
+    }
+}
+
+@media(max-width: 568px){
+    .pic1,.pic2,.pic3, .pic4, .pic5, .pic6{
+        background-attachment: scroll;
+    }
+    .menu-group {
+        font-size:12px;
+        grid-template-columns: 1fr;
+    }
+}
