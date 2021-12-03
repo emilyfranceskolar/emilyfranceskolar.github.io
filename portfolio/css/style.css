@@ -1,0 +1,38 @@
+/*hack for the fixed nav-bar*/  
+body::before {
+    display: block;
+    content: '';
+    height: 50px;
+}
+/*to show an underline for links*/
+#main-nav a {
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+
+} 
+#main-nav a:hover {
+    border-bottom: 3px solid #ffc107;
+}
+#intro {
+    background-color:#6610f2;
+} 
+
+.card-body {
+    background-color: #20b2aa;
+}  
+.carousel-pic {
+    max-height: 400px;
+    overflow: hidden;
+}
+/*Media queries for different screen sizes*/
+@media (max-width:786px) {
+    #main-nav a {
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+    
+    } 
+    #main-nav a:hover {
+        border-bottom: 3px solid transparent;
+        color: #ffc107;
+    } 
+}
